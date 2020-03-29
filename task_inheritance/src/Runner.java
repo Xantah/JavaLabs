@@ -1,3 +1,12 @@
+// 8. Транспорт. 
+// Определить иерархию подвижного состава железнодорожного транспорта. 
+// Создать пассажирский поезд. 
+// Подсчитать общую численность пассажиров и багажа. 
+// Провести сортировку вагонов поезда на основе уровня комфортности. 
+// Найти в поезде вагоны, соответствующие заданному диапазону параметров числа пассажиров.
+
+
+
 import by.gsu.pms.beans.*;
 import by.gsu.pms.writers.WriterInfo;
 
@@ -11,14 +20,14 @@ public class Runner {
 
     public static void main(String[] args) {
         train.setCarriages(new RailwayCarriage[]{   new SleepingCar(5, 5, 5),
-                                                    new SleepingCar(5,5, 5),
-                                                    new CoupeCarriage(5,5, 5),
-                                                    new CoupeCarriage(5,5, 5),
+                                                    new SleepingCar(5,2, 2),
+                                                    new CoupeCarriage(4,5, 3),
+                                                    new CoupeCarriage(5,1, 5),
                                                     new OpenCarriage(5,5, 5),
-                                                    new OpenCarriage(5,5, 5),
-                                                    new SleepingCar(5,5, 5),
-                                                    new SleepingCar(5,5, 5),
-                                                    new CoupeCarriage(5,5, 5),
+                                                    new OpenCarriage(5,4, 4),
+                                                    new SleepingCar(5,5, 3),
+                                                    new SleepingCar(4,4, 4),
+                                                    new CoupeCarriage(5,4, 5),
                                                     new SleepingCar(5,5, 5)
         });
         while (true){
